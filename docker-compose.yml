@@ -1,0 +1,13 @@
+services:
+  discord_bot:
+    build: .
+    environment:
+      - DISCORD_CHANNEL_ID=
+      - DISCORD_TOKEN=
+      - BLUESKY_USERNAME=
+      - BLUESKY_PASSWORD=
+      - BSKY_LIST_URL=
+      - CHECK_INTERVAL_MINUTES=1
+      - POST_AGE_MINUTES=2
+      - MAX_HISTORY_ENTRIES=10
+    restart: unless-stopped
